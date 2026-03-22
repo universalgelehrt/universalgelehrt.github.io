@@ -102,12 +102,22 @@ input, textarea {
 }
 
 /* FOOTER */
+
 footer {
+    background-color: #0a0f1c;   /* match body background */
+    color: #00ffc3;              /* match your branding */
     text-align: center;
-    padding: 20px;
-    background: #05080f;
-    margin-top: 50px;
-    font-size: 0.9rem;
+    padding: 15px 0;
+    border-top: 1px solid #00ffc3;
+}
+
+/* style audio player to match theme */
+footer audio {
+    margin: 10px 0;
+    width: 90%;                 /* fits nicely inside footer */
+    max-width: 400px;           /* prevents it from being too wide */
+    outline: none;              /* remove default focus outline */
+    border-radius: 8px;         /* subtle rounded corners */
 }
 
 /* SERVICES GRID */
