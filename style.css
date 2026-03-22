@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0f1c;
+    color: #e6f1ff;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(5, 8, 15, 0.9);
+    border-bottom: 1px solid #00ffc3;
+}
+
+nav a {
+    color: #00ffc3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HERO */
+header {
+    text-align: center;
+    padding: 120px 20px;
+    background: radial-gradient(circle at center, #111a33, #0a0f1c);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #00ffc3;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(17, 26, 51, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 195, 0.05);
+}
+
+/* HEADINGS */
+h1, h2 {
+    color: #00ffc3;
+    margin-bottom: 15px;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* BUTTON */
+button {
+    padding: 15px 30px;
+    background: #00ffc3;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+}
+
+/* FORM */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #05080f;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* SERVICES GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* CARD */
+.service-card {
+    background: rgba(17, 26, 51, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid rgba(0,255,195,0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,255,195,0.2);
+    border-color: #00ffc3;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: #00ffc3;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+}
+
+/* CONTACT LAYOUT */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: rgba(17, 26, 51, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,255,195,0.2);
+}
+
+/* CONTACT FORM */
+.contact-form {
+    background: rgba(17, 26, 51, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,255,195,0.2);
+}
+
+/* INPUT STYLE */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
