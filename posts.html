@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hadis Software Solutions – Social Feed</title>
+<style>
+  /* BODY */
+  body {
+    background-color: #0a0f1c;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding-top: 10px; /* space for navbar */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* NAVBAR */
+  nav {
+   position: sticky; /* keeps it on top when scrolling */
+   top: 0;
+   background-color: rgba(5, 8, 15, 0.95); /* semi-transparent dark */
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   padding: 15px 0;
+   z-index: 1000; /* ensures navbar is above all content */
+   border-bottom: 1px solid #00ffc3;
+  }
+
+  nav a {
+    color: #00ffc3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  nav a:hover, nav a.active {
+    color: white;
+    border-bottom: 2px solid #00ffc3;
+  }
+
+  /* FEED */
+  .feed {
+   width: 100%;
+   max-width: 420px;
+   margin: 20px auto;
+   padding: 0 15px; /* add some padding */
+  }
+
+  .post {
+    background-color: #111a33;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 15px rgba(0, 255, 195, 0.2);
+    color: #e6f1ff;
+    text-align: left;
+  }
+
+  .post-image {
+    width: 100%;          /* image fills post width */
+    max-width: 100%;      /* prevents overflow */
+    height: auto;         /* keeps aspect ratio */
+    border-radius: 12px;  /* optional: rounded corners */
+    margin: 10px 0;       /* spacing above/below image */
+    display: block;       /* removes inline spacing issues */
+    box-shadow: 0 4px 10px rgba(0, 255, 195, 0.2); /* subtle shadow */
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #00ffc3;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .username {
+    font-weight: bold;
+    color: #00ffc3;
+    font-size: 1.1rem;
+  }
+
+  .post-content p {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+
+  .hashtags {
+    color: #00ffc3;
+    font-size: 0.85rem;
+    margin-top: 10px;
+  }
+
+  .footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="feed.html" class="active">Social Feed</a>
+</nav>
+
+<!-- SOCIAL FEED -->
+<div class="feed">
+
+  <!-- Post 1 -->
+  <div class="post">
+    <div class="profile">
+      <div class="avatar"></div>
+      <div class="username">Hadis Software Solutions</div>
+    </div>
+    <div class="post-content">
+      <p>Your biggest security risk isn’t visible.</p>
+      <img src="D1.jpeg" alt="Security Scan" class="post-image">
+      <p>Most tools only find surface bugs.</p>
+      <p>We go deeper – code, architecture, and design patterns.</p>
+      <p><strong>Yes, we scan!</strong></p>
+    </div>
+    <div class="hashtags">
+      #CyberSecurity #SoftwareSecurity #DevSecOps #HackersBeware #YesWeScan
+    </div>
+    <div class="footer">
+      <span>💬 12 Comments</span>
+      <span>🔁 5 Shares</span>
+    </div>
+  </div>
+
+  <!-- Post 2 -->
+  <div class="post">
+    <div class="profile">
+      <div class="avatar"></div>
+      <div class="username">Hadis Software Solutions</div>
+    </div>
+    <div class="post-content">
+      <p>Surface scanning tools miss hidden flaws.</p>
+      <img src="D2.jpeg" alt="Cyber Security Analysis" class="post-image">
+      <p>Our deep analysis finds risks in your software architecture.</p>
+      <p>Prevent breaches before they happen.</p>
+    </div>
+    <div class="hashtags">
+      #CyberSecurity #DevSecOps #SoftwareAnalysis #YesWeScan
+    </div>
+    <div class="footer">
+      <span>💬 8 Comments</span>
+      <span>🔁 3 Shares</span>
+    </div>
+  </div>
+
+  <!-- Post 3 -->
+  <div class="post">
+    <div class="profile">
+      <div class="avatar"></div>
+      <div class="username">Hadis Software Solutions</div>
+    </div>
+    <div class="post-content">
+      <p>Beyond vulnerabilities – we examine design patterns & system logic.</p>
+       <img src="D6.jpeg" alt="Secure Software" class="post-image">
+      <p>Secure your software holistically.</p>
+      <p>Start your deep scan today!</p>
+    </div>
+    <div class="hashtags">
+      #SoftwareSecurity #DesignSecurity #CyberSecurity #YesWeScan
+    </div>
+    <div class="footer">
+      <span>💬 5 Comments</span>
+      <span>🔁 2 Shares</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
