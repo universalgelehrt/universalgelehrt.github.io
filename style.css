@@ -193,39 +193,3 @@ input, textarea {
         grid-template-columns: 1fr;
     }
 }
-
-.data-flow {
-  position: fixed;
-  top: 0;
-  width: 80px;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.left { left: 0; }
-.right { right: 0; }
-
-.binary {
-  position: absolute;
-  width: 100%;
-  font-family: monospace;
-  font-size: 11px;
-  color: rgba(0, 255, 195, 0.25);
-  white-space: nowrap;
-  animation: fall 8s linear infinite;
-}
-
-/* unterschiedliche Startpositionen */
-.binary:nth-child(1) { left: 0; animation-delay: 0s; }
-.binary:nth-child(2) { left: 0; animation-delay: 2s; }
-.binary:nth-child(3) { left: 0; animation-delay: 4s; }
-.binary:nth-child(4) { left: 0; animation-delay: 1s; }
-.binary:nth-child(5) { left: 0; animation-delay: 3s; }
-
-@keyframes fall {
-  0%   { transform: translateY(-100px); opacity: 0; }
-  10%  { opacity: 1; }
-  100% { transform: translateY(110vh); opacity: 0; }
-}
