@@ -193,3 +193,34 @@ input, textarea {
         grid-template-columns: 1fr;
     }
 }
+
+.data-flow {
+  position: fixed;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.binary {
+  font-family: monospace;
+  font-size: 12px;
+  color: rgba(0, 255, 195, 0.3);
+  animation: fall 6s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
