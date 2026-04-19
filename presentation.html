@@ -1,41 +1,127 @@
+Here is your HTML properly formatted and cleaned for copy/paste:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Presentation – Hadis Software Solutions</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Presentation – Hadis Software Solutions</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #0a0f1c;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* FULL SCREEN HERO CENTER */
+        .topbar {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* BIG CYBER TITLE */
+        .title {
+            font-size: 48px;
+            font-weight: 800;
+            color: #00ffc3;
+            letter-spacing: 3px;
+            text-shadow:
+                0 0 10px rgba(0, 255, 195, 0.8),
+                0 0 25px rgba(0, 255, 195, 0.5),
+                0 0 40px rgba(0, 255, 195, 0.3);
+            animation: glow 2s infinite alternate;
+        }
+
+        /* SUBTITLE */
+        .subtitle {
+            margin-top: 15px;
+            font-size: 16px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* GLOW EFFECT */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00ffc3;
+            }
+            to {
+                text-shadow: 0 0 30px #00ffc3;
+            }
+        }
+
+        /* Slide container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px);
+        }
+
+        iframe {
+            width: 90%;
+            height: 85vh;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 255, 195, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR (ONLY HTML HERE) -->
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="posts.html">Posts</a>
-  <a href="presentation.html">Presentation</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="posts.html">Posts</a>
+        <a href="presentation.html">Presentation</a>
+    </nav>
 
-<!-- HERO TITLE -->
-<div class="topbar">
-  <div class="title">Hadis Software Solutions</div>
-  <div class="subtitle">Cybersecurity • Architecture • Deep System Analysis</div>
-</div>
+    <div class="topbar">
+        <div class="title">Hadis Software Solutions</div>
+        <div class="subtitle">Cybersecurity • Architecture • Deep System Analysis</div>
+    </div>
 
-<!-- PRESENTATION -->
-<div class="container">
-  <iframe 
-    src="https://docs.google.com/presentation/d/1C4cnRJiX6zrmxH30oQUHs8NRZJtm3l9Wvfl7sduMNf8/embed"
-    allowfullscreen>
-  </iframe>
-</div>
+    <div class="container">
+        <iframe
+            src="https://docs.google.com/presentation/d/1C4cnRJiX6zrmxH30oQUHs8NRZJtm3l9Wvfl7sduMNf8/edit?slide=id.g3d7521bc495_2_83#slide=id.g3d7521bc495_2_83"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-<!-- FOOTER -->
-<div class="footer">
-  © 2026 Hadis Software Solutions
-</div>
+    <div class="footer">
+        © 2026 Hadis Software Solutions
+    </div>
 
 </body>
 </html>
+```
