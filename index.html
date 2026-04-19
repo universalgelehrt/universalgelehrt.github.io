@@ -36,6 +36,11 @@
     <p>We don’t just find vulnerabilities – we uncover the root cause.</p>
 </header>
 
+<!-- CYBER FEED -->
+<div id="cyber-feed">
+    <p>Loading cybersecurity feed...</p>
+</div>
+    
 <!-- CONTENT -->
 <section>
     <h2>Why It Matters</h2>
@@ -106,5 +111,36 @@
     <p>© 2026 Hadis Software Solutions</p>
 </footer>
 
+<!-- CYBER FEED JavaScript -->
+<script>
+    async function loadCyberFeed() {
+        try {
+            const response = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https://feeds.feedburner.com/TheHackersNews");
+            const data = await response.json();
+    
+            const container = document.getElementById("cyber-feed");
+            container.innerHTML = "";
+    
+            data.items.slice(0, 5).forEach(item => {
+                const post = document.createElement("div");
+                post.innerHTML = `
+                    <h3>${item.title}</h3>
+                    <p>${item.pubDate}</p>
+                    <a href="${item.link}" target="_blank">Read more</a>
+                    <hr>
+                `;
+                container.appendChild(post);
+            });
+    
+        } catch (error) {
+            console.error("Error loading feed:", error);
+        }
+    }
+loadCyberFeed();
+</script>
+    
+</body>
+</html>
+    
 </body>
 </html>
