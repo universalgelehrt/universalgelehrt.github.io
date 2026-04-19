@@ -37,13 +37,15 @@
             border-bottom: 2px solid #00ffc3;
           }
 
-        /* FULL SCREEN HERO CENTER */
         .topbar {
             position: absolute;
-            top: 50%;
+            top: 20px;              /* Abstand nach oben im Container */
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             text-align: center;
+            z-index: 10;
+        
+            pointer-events: none;   /* wichtig: Präsentation bleibt klickbar */
         }
 
         /* BIG CYBER TITLE */
@@ -78,6 +80,7 @@
 
         /* Slide container */
         .container {
+            position: relative;  /* DAS ist der Schlüssel! */
             display: flex;
             justify-content: center;
             align-items: center;
